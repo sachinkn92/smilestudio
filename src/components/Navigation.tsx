@@ -39,9 +39,9 @@ const Navigation = () => {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:+1234567890" className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors">
+            <a href="tel:+911234567890" className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="text-sm">(123) 456-7890</span>
+              <span className="text-sm">1234567890</span>
             </a>
             <Button size="sm" className="bg-gradient-to-r from-primary to-secondary hover:from-primary-dark hover:to-primary">
               <Calendar className="w-4 h-4 mr-2" />
@@ -62,9 +62,9 @@ const Navigation = () => {
                   {item.name}
                 </Link>)}
               <div className="pt-2 mt-2 border-t border-border">
-                <a href="tel:+1234567890" className="flex items-center space-x-2 px-3 py-2 text-foreground hover:text-primary transition-colors">
+                <a href="tel:+911234567890" className="flex items-center space-x-2 px-3 py-2 text-foreground hover:text-primary transition-colors">
                   <Phone className="w-4 h-4" />
-                  <span>(123) 456-7890</span>
+                  <span>1234567890</span>
                 </a>
                 <Button className="w-full mt-2 bg-gradient-to-r from-primary to-secondary hover:from-primary-dark hover:to-primary">
                   <Calendar className="w-4 h-4 mr-2" />

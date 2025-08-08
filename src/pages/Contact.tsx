@@ -71,50 +71,50 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      primary: "(123) 456-7890",
-      secondary: "Emergency: (123) 456-7899",
-      action: "tel:+1234567890"
+      primary: "1234567890",
+      secondary: "Emergency: 0987654321",
+      action: "tel:+911234567890"
     },
     {
       icon: Mail,
       title: "Email",
-      primary: "info@brightsmile.com",
-      secondary: "appointments@brightsmile.com",
-      action: "mailto:info@brightsmile.com"
+      primary: "smilestudio@gmail.com",
+      secondary: "appointments@smilestudio.com",
+      action: "mailto:smilestudio@gmail.com"
     },
     {
       icon: MapPin,
       title: "Address",
-      primary: "123 Dental Street",
-      secondary: "Health City, HC 12345",
+      primary: "Smile Studio",
+      secondary: "Hassan, Karnataka, 573201",
       action: "https://maps.google.com"
     },
     {
       icon: Clock,
       title: "Hours",
-      primary: "Mon-Fri: 8:00 AM - 6:00 PM",
-      secondary: "Sat: 9:00 AM - 4:00 PM",
+      primary: "Mon-Sat: 10:00 AM - 1:00 PM",
+      secondary: "Mon-Sat: 2:00 PM - 6:00 PM",
       action: null
     }
   ];
 
   const services = [
     "General Consultation",
-    "Cleaning & Checkup",
+    "Root Canal Treatment (Dr. Sumithra)",
+    "Teeth Clipping (Dr. Nandish B K)",
     "Cosmetic Dentistry",
-    "Orthodontics",
-    "Dental Implants",
+    "Dental Cleanings",
     "Emergency Care",
     "Other"
   ];
 
   const officeHours = [
-    { day: "Monday", hours: "8:00 AM - 6:00 PM" },
-    { day: "Tuesday", hours: "8:00 AM - 6:00 PM" },
-    { day: "Wednesday", hours: "8:00 AM - 6:00 PM" },
-    { day: "Thursday", hours: "8:00 AM - 6:00 PM" },
-    { day: "Friday", hours: "8:00 AM - 6:00 PM" },
-    { day: "Saturday", hours: "9:00 AM - 4:00 PM" },
+    { day: "Monday", hours: "10:00 AM - 1:00 PM, 2:00 PM - 6:00 PM" },
+    { day: "Tuesday", hours: "10:00 AM - 1:00 PM, 2:00 PM - 6:00 PM" },
+    { day: "Wednesday", hours: "10:00 AM - 1:00 PM, 2:00 PM - 6:00 PM" },
+    { day: "Thursday", hours: "10:00 AM - 1:00 PM, 2:00 PM - 6:00 PM" },
+    { day: "Friday", hours: "10:00 AM - 1:00 PM, 2:00 PM - 6:00 PM" },
+    { day: "Saturday", hours: "10:00 AM - 1:00 PM, 2:00 PM - 6:00 PM" },
     { day: "Sunday", hours: "Closed" }
   ];
 
@@ -127,7 +127,7 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 mb-6">
-              Contact BrightSmile Dental
+              Contact Smile Studio Hassan
             </Badge>
             <h1 className="text-5xl font-bold mb-6">
               Get in{" "}
@@ -136,8 +136,8 @@ const Contact = () => {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We're here to answer your questions and help you schedule your next appointment. 
-              Contact us today to begin your journey to optimal oral health.
+              Located in Hassan, Karnataka, we provide multilingual dental care in Kannada, Hindi, and English. 
+              Contact us for appointments (10 AM - 1 PM) and enjoy 25% discount for new patients.
             </p>
           </div>
         </div>
@@ -281,7 +281,7 @@ const Contact = () => {
                       <div>
                         <p className="font-medium text-destructive">Emergency Care</p>
                         <p className="text-sm text-muted-foreground">
-                          For dental emergencies, please call us directly at (123) 456-7899 for immediate assistance.
+                          For dental emergencies, please call us directly at 0987654321 for immediate assistance.
                         </p>
                       </div>
                     </div>
@@ -326,7 +326,7 @@ const Contact = () => {
                       <div>
                         <p className="font-medium mb-1">24/7 Emergency Line</p>
                         <p className="text-sm text-muted-foreground mb-2">
-                          Call (123) 456-7899 for dental emergencies outside office hours.
+                          Call 0987654321 for dental emergencies outside office hours.
                         </p>
                         <Button variant="outline" size="sm" className="border-destructive text-destructive hover:bg-destructive hover:text-destructive-foreground">
                           <Phone className="w-4 h-4 mr-2" />
@@ -349,7 +349,7 @@ const Contact = () => {
                       <div>
                         <p className="font-medium mb-1">Welcome Special</p>
                         <p className="text-sm text-muted-foreground mb-3">
-                          New patients receive 50% off their first cleaning and comprehensive exam.
+                          New patients receive 25% off their first visit. Advance booking with minimal payment required.
                         </p>
                         <Button size="sm" className="bg-gradient-to-r from-primary to-secondary hover:from-primary-dark hover:to-primary">
                           <Calendar className="w-4 h-4 mr-2" />
@@ -369,16 +369,16 @@ const Contact = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Visit Our Modern Facility</h2>
+            <h2 className="text-3xl font-bold mb-4">Visit Smile Studio in Hassan</h2>
             <p className="text-xl text-muted-foreground">
-              Conveniently located in the heart of Health City with ample parking.
+              Conveniently located in Hassan, Karnataka with multilingual staff support.
             </p>
           </div>
           
           <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-12 text-center">
             <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-            <h3 className="text-2xl font-bold mb-2">123 Dental Street</h3>
-            <p className="text-muted-foreground mb-6">Health City, HC 12345</p>
+            <h3 className="text-2xl font-bold mb-2">Smile Studio</h3>
+            <p className="text-muted-foreground mb-6">Hassan, Karnataka, 573201</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="outline">
                 <MapPin className="w-4 h-4 mr-2" />

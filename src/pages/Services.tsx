@@ -35,8 +35,8 @@ const Services = () => {
         },
         {
           name: "Root Canal Therapy",
-          description: "Advanced endodontic treatment to save infected or damaged teeth.",
-          features: ["Gentle techniques", "Pain management", "High success rate", "Tooth preservation"]
+          description: "Dr. Sumithra specializes in pain-free root canal treatments using advanced techniques.",
+          features: ["Gentle techniques", "Pain management", "5+ years experience", "Multilingual consultation"]
         },
         {
           name: "Dental Crowns & Bridges",
@@ -66,9 +66,9 @@ const Services = () => {
           features: ["Digital smile design", "Multiple procedures", "Coordinated care", "Stunning results"]
         },
         {
-          name: "Bonding & Contouring",
-          description: "Minor corrections to improve the shape and appearance of teeth.",
-          features: ["Same-day results", "Conservative approach", "Natural appearance", "Affordable option"]
+          name: "Teeth Clipping",
+          description: "Dr. Nandish B K specializes in precise teeth clipping for perfect dental aesthetics.",
+          features: ["Expert precision", "Aesthetic enhancement", "5+ years experience", "Multilingual consultation"]
         }
       ]
     },
@@ -123,9 +123,9 @@ const Services = () => {
     }
   ];
 
-  const insuranceProviders = [
-    "Delta Dental", "MetLife", "Aetna", "Cigna", 
-    "Blue Cross Blue Shield", "Guardian", "Humana", "United Healthcare"
+  const paymentOptions = [
+    "Cash Payment", "Online Payment", "Card Payment", "Advance Booking with Minimal Payment", 
+    "25% New Patient Discount", "Flexible Payment Plans", "Insurance Claims Processing", "Emergency Payment Options"
   ];
 
   return (
@@ -146,8 +146,8 @@ const Services = () => {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              From routine cleanings to complex procedures, we offer comprehensive dental services 
-              using the latest technology and techniques for optimal results.
+              Smile Studio in Hassan, Karnataka offers specialized dental services with multilingual support. 
+              Enjoy 25% discount for new patients and convenient booking from 10 AM - 1 PM.
             </p>
             <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:from-primary-dark hover:to-primary">
               <Calendar className="w-5 h-5 mr-2" />
@@ -238,39 +238,39 @@ const Services = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Insurance & Payment Options</h2>
+            <h2 className="text-4xl font-bold mb-4">Payment Options & Special Offers</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We accept most major insurance plans and offer flexible payment options 
-              to make dental care affordable for everyone.
+              Smile Studio offers flexible payment options including cash, online, and card payments. 
+              New patients enjoy 25% discount with advance booking requiring minimal payment.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Accepted Insurance Plans</h3>
+              <h3 className="text-2xl font-bold mb-6">Payment Methods Accepted</h3>
               <div className="grid grid-cols-2 gap-3">
-                {insuranceProviders.map((provider, index) => (
+                {paymentOptions.map((option, index) => (
                   <div key={index} className="flex items-center space-x-2 p-3 bg-muted/50 rounded-lg">
                     <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
-                    <span className="text-sm font-medium">{provider}</span>
+                    <span className="text-sm font-medium">{option}</span>
                   </div>
                 ))}
               </div>
               <p className="text-sm text-muted-foreground mt-4">
-                Don't see your insurance? Call us - we work with many additional providers.
+                Book appointments between 10 AM - 1 PM. Minimum 3 days advance booking required.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-8">
-              <h3 className="text-2xl font-bold mb-6">Payment Options</h3>
+              <h3 className="text-2xl font-bold mb-6">Booking & Special Offers</h3>
               <div className="space-y-4">
                 {[
-                  "Insurance claims processing",
-                  "Flexible payment plans",
-                  "CareCredit financing",
-                  "HSA/FSA accepted",
-                  "Senior & military discounts",
-                  "Family plan discounts"
+                  "25% discount for new patients",
+                  "Appointment slots every 1.5 hours",
+                  "Booking available 10 AM - 1 PM",
+                  "Minimum 3 days advance booking",
+                  "Cancellation 1 day before appointment",
+                  "Emergency appointments available"
                 ].map((option, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
@@ -298,7 +298,7 @@ const Services = () => {
               Book Consultation
             </Button>
             <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              Call (123) 456-7890
+              Call 1234567890
             </Button>
           </div>
         </div>

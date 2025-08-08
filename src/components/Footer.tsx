@@ -10,10 +10,10 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">Ss</span>
               </div>
-              <span className="text-xl font-bold">Smile Studio Dental</span>
+              <span className="text-xl font-bold">Smile Studio</span>
             </div>
             <p className="text-background/80 mb-6 max-w-md">
-              Providing exceptional dental care with a gentle touch. Our experienced team is committed to helping you achieve and maintain optimal oral health.
+              "Smile Alive" - Providing exceptional dental care in Hassan, Karnataka. Our experienced team speaks Kannada, Hindi, and English to serve you better.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-background/60 hover:text-primary transition-colors">
@@ -67,26 +67,27 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5" />
                 <div>
-                  <p className="text-background/80">Smile studio</p>
-                  <p className="text-background/80">Hassan, 573201</p>
+                  <p className="text-background/80">Smile Studio</p>
+                  <p className="text-background/80">Hassan, Karnataka, 573201</p>
                 </div>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <a href="tel:+1234567890" className="text-background/80 hover:text-primary transition-colors">
-                  (123) 456-7890
+                <a href="tel:+911234567890" className="text-background/80 hover:text-primary transition-colors">
+                  1234567890
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <a href="mailto:info@brightsmile.com" className="text-background/80 hover:text-primary transition-colors">info@smilestudio.com</a>
+                <a href="mailto:smilestudio@gmail.com" className="text-background/80 hover:text-primary transition-colors">smilestudio@gmail.com</a>
               </li>
               <li className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-primary mt-0.5" />
                 <div className="text-background/80 text-sm">
-                  <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
-                  <p>Sat: 9:00 AM - 4:00 PM</p>
+                  <p>Mon-Sat: 10:00 AM - 1:00 PM</p>
+                  <p>Mon-Sat: 2:00 PM - 6:00 PM</p>
                   <p>Sun: Closed</p>
+                  <p className="text-red-400 font-semibold">Emergency: 0987654321</p>
                 </div>
               </li>
             </ul>
@@ -94,7 +95,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
-          <p className="text-background/60 text-sm">© 2024 Smile Studio Dental. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p className="text-background/60 text-sm">© 2024 Smile Studio. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
     </footer>;

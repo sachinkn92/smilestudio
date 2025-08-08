@@ -10,34 +10,33 @@ import {
   Shield,
   Star,
   MapPin,
-  Clock
+  Clock,
+  Globe
 } from "lucide-react";
+import drSumithra from "@/assets/dr-sumithra.jpg";
+import drNandish from "@/assets/dr-nandish.jpg";
 
 const About = () => {
   const dentists = [
     {
-      name: "Dr. Sarah Mitchell",
-      title: "Lead Dentist & Practice Owner",
-      education: "DDS from Harvard School of Dental Medicine",
-      experience: "15+ years",
-      specialties: ["General Dentistry", "Cosmetic Procedures", "Implants"],
-      bio: "Dr. Mitchell is passionate about creating beautiful, healthy smiles while ensuring patient comfort. She stays current with the latest dental technologies and techniques."
+      name: "Dr. Sumithra",
+      title: "Root Canal Specialist",
+      education: "BDS with Advanced Endodontic Training",
+      experience: "5+ years",
+      specialties: ["Root Canal Treatment", "Endodontics", "Pain Management"],
+      bio: "Dr. Sumithra specializes in complex root canal treatments, ensuring pain-free procedures with advanced techniques. Fluent in Kannada, Hindi, and English.",
+      image: drSumithra,
+      languages: ["Kannada", "Hindi", "English"]
     },
     {
-      name: "Dr. James Chen",
-      title: "Orthodontic Specialist",
-      education: "DDS & Orthodontic Residency at UCLA",
-      experience: "12+ years",
-      specialties: ["Orthodontics", "Clear Aligners", "TMJ Treatment"],
-      bio: "Dr. Chen specializes in creating perfectly aligned smiles using both traditional and modern orthodontic techniques."
-    },
-    {
-      name: "Dr. Emily Rodriguez",
-      title: "Pediatric Dentist",
-      education: "DDS & Pediatric Residency at UCSF",
-      experience: "10+ years",
-      specialties: ["Pediatric Dentistry", "Preventive Care", "Special Needs"],
-      bio: "Dr. Rodriguez creates positive dental experiences for children, building healthy habits that last a lifetime."
+      name: "Dr. Nandish B K",
+      title: "Cosmetic & Restorative Dentist",
+      education: "BDS with Cosmetic Dentistry Certification",
+      experience: "5+ years",
+      specialties: ["Teeth Clipping", "Cosmetic Dentistry", "Dental Aesthetics"],
+      bio: "Dr. Nandish B K excels in cosmetic procedures and teeth clipping, helping patients achieve perfect smiles. Speaks Kannada, Hindi, and English.",
+      image: drNandish,
+      languages: ["Kannada", "Hindi", "English"]
     }
   ];
 
@@ -82,17 +81,17 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 mb-6">
-              About BrightSmile Dental
+              About Smile Studio
             </Badge>
             <h1 className="text-5xl font-bold mb-6">
-              Dedicated to Your{" "}
+              "Smile Alive" -{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Dental Health
+                Your Dental Care
               </span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              For over 15 years, we've been providing exceptional dental care with a gentle touch. 
-              Our team combines expertise with compassion to create positive dental experiences.
+              Located in Hassan, Karnataka, Smile Studio provides exceptional dental care with our experienced team. 
+              We offer services in Kannada, Hindi, and English for your comfort.
             </p>
           </div>
         </div>
@@ -106,39 +105,39 @@ const About = () => {
               <h2 className="text-4xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  BrightSmile Dental was founded in 2009 with a simple mission: to provide 
-                  exceptional dental care in a comfortable, anxiety-free environment. What started 
-                  as a small practice has grown into a comprehensive dental clinic serving thousands 
-                  of patients.
+                  Smile Studio was established in Hassan, Karnataka with our mission "Smile Alive" - 
+                  to bring life to every smile through exceptional dental care. We serve the local 
+                  community with personalized attention and multilingual support.
                 </p>
                 <p>
-                  We believe that everyone deserves a healthy, beautiful smile. That's why we've 
-                  invested in the latest technology, continued education for our staff, and created 
-                  a welcoming atmosphere where patients feel like family.
+                  Our team of experienced dentists, Dr. Sumithra and Dr. Nandish B K, each bring 5+ years 
+                  of specialized expertise. We offer comprehensive dental services with a special 25% 
+                  discount for new patients.
                 </p>
                 <p>
-                  Today, we're proud to be recognized as one of the leading dental practices in our 
-                  community, but our commitment remains the same: exceptional care, one smile at a time.
+                  With convenient appointment booking (10 AM - 1 PM) and emergency services available, 
+                  we're committed to making quality dental care accessible to everyone in Hassan and 
+                  surrounding areas.
                 </p>
               </div>
             </div>
             <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">5000+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">1000+</div>
                   <div className="text-sm text-muted-foreground">Happy Patients</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary mb-2">15+</div>
-                  <div className="text-sm text-muted-foreground">Years Serving</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">5+</div>
+                  <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-accent mb-2">50+</div>
-                  <div className="text-sm text-muted-foreground">Procedures</div>
+                  <div className="text-3xl font-bold text-accent mb-2">25%</div>
+                  <div className="text-sm text-muted-foreground">New Patient Discount</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">4.9★</div>
-                  <div className="text-sm text-muted-foreground">Patient Rating</div>
+                  <div className="text-3xl font-bold text-primary mb-2">3</div>
+                  <div className="text-sm text-muted-foreground">Languages Spoken</div>
                 </div>
               </div>
             </div>
@@ -157,14 +156,16 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {dentists.map((dentist, index) => (
               <Card key={index} className="border-0 shadow-lg">
                 <CardContent className="p-6">
-                  <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-primary-foreground">
-                      {dentist.name.split(' ').map(n => n[0]).join('')}
-                    </span>
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                    <img 
+                      src={dentist.image} 
+                      alt={dentist.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-xl font-bold text-center mb-2">{dentist.name}</h3>
                   <p className="text-primary text-center font-medium mb-4">{dentist.title}</p>
@@ -177,6 +178,10 @@ const About = () => {
                     <div className="flex items-center space-x-2">
                       <Award className="w-4 h-4 text-secondary" />
                       <span className="text-sm text-muted-foreground">{dentist.experience} experience</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Globe className="w-4 h-4 text-accent" />
+                      <span className="text-sm text-muted-foreground">{dentist.languages?.join(', ')}</span>
                     </div>
                   </div>
 
@@ -205,7 +210,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Our Core Values</h2>
             <p className="text-xl text-muted-foreground">
-              These principles guide everything we do at BrightSmile Dental.
+              These principles guide everything we do at Smile Studio.
             </p>
           </div>
 
@@ -262,15 +267,16 @@ const About = () => {
             <div className="flex items-center justify-center space-x-3">
               <MapPin className="w-6 h-6" />
               <div>
-                <div className="font-semibold">123 Dental Street</div>
-                <div>Health City, HC 12345</div>
+                <div className="font-semibold">Smile Studio</div>
+                <div>Hassan, Karnataka, 573201</div>
               </div>
             </div>
             <div className="flex items-center justify-center space-x-3">
               <Clock className="w-6 h-6" />
               <div>
-                <div className="font-semibold">Mon-Fri: 8:00 AM - 6:00 PM</div>
-                <div>Sat: 9:00 AM - 4:00 PM</div>
+                <div className="font-semibold">Mon-Sat: 10:00 AM - 1:00 PM</div>
+                <div>Mon-Sat: 2:00 PM - 6:00 PM</div>
+                <div className="text-red-300">Emergency: 0987654321</div>
               </div>
             </div>
           </div>

@@ -42,27 +42,27 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      text: "Dr. Smith and the team at BrightSmile made my dental anxiety disappear. The care is exceptional!",
+      name: "Rajesh Kumar",
+      text: "Dr. Sumithra's root canal treatment was completely painless. Speaking in Kannada made me feel comfortable. Excellent service!",
       rating: 5
     },
     {
-      name: "Michael Chen",
-      text: "Finally found a dentist I trust. The modern equipment and gentle approach make all the difference.",
+      name: "Priya Sharma",
+      text: "Dr. Nandish B K's teeth clipping gave me the perfect smile. The 25% discount for new patients was a great bonus!",
       rating: 5
     },
     {
-      name: "Emily Davis",
-      text: "My smile transformation exceeded all expectations. Professional, caring, and results-driven.",
+      name: "Ananda Murthy",
+      text: "Smile Studio in Hassan is the best dental clinic. Easy booking, professional staff, and they speak all three languages perfectly.",
       rating: 5
     }
   ];
 
   const stats = [
-    { number: "15+", label: "Years Experience" },
-    { number: "5000+", label: "Happy Patients" },
-    { number: "50+", label: "Procedures Mastered" },
-    { number: "24/7", label: "Emergency Support" }
+    { number: "5+", label: "Years Experience" },
+    { number: "1000+", label: "Happy Patients" },
+    { number: "25%", label: "New Patient Discount" },
+    { number: "24/7", label: "Emergency: 0987654321" }
   ];
 
   return (
@@ -83,18 +83,18 @@ const Index = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
-                  ✨ New Patient Special - 50% Off First Visit
+                  ✨ New Patient Special - 25% Off First Visit
                 </Badge>
                 <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                  Your Perfect{" "}
+                  "Smile Alive" -{" "}
                   <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                    Smile
+                    Smile Studio
                   </span>{" "}
-                  Awaits
+                  Hassan
                 </h1>
                 <p className="text-xl text-muted-foreground max-w-2xl">
-                  Experience gentle, professional dental care in our state-of-the-art facility. 
-                  We're committed to your comfort and creating beautiful, healthy smiles.
+                  Experience exceptional dental care in Hassan, Karnataka. Our multilingual team (Kannada, Hindi, English) 
+                  provides specialized treatments with advance booking and emergency services available.
                 </p>
               </div>
               
@@ -156,15 +156,15 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6">Why Choose BrightSmile?</h2>
+              <h2 className="text-4xl font-bold mb-6">Why Choose Smile Studio?</h2>
               <div className="space-y-6">
                 {[
-                  "State-of-the-art equipment and technology",
-                  "Experienced and gentle dental professionals",
-                  "Comfortable, anxiety-free environment",
-                  "Comprehensive insurance acceptance",
-                  "Flexible scheduling including evenings",
-                  "Emergency care available 24/7"
+                  "Multilingual support (Kannada, Hindi, English)",
+                  "Specialized doctors with 5+ years experience",
+                  "25% discount for new patients",
+                  "Convenient booking slots (10 AM - 1 PM)",
+                  "Advance booking with minimal payment",
+                  "Emergency care available: 0987654321"
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
@@ -177,18 +177,18 @@ const Index = () => {
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
                   <Users className="w-12 h-12 text-primary mx-auto mb-3" />
-                  <div className="text-2xl font-bold text-primary">5000+</div>
+                  <div className="text-2xl font-bold text-primary">1000+</div>
                   <div className="text-sm text-muted-foreground">Satisfied Patients</div>
                 </div>
                 <div className="text-center">
                   <Award className="w-12 h-12 text-secondary mx-auto mb-3" />
-                  <div className="text-2xl font-bold text-secondary">15+</div>
-                  <div className="text-sm text-muted-foreground">Years of Excellence</div>
+                  <div className="text-2xl font-bold text-secondary">5+</div>
+                  <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="text-center">
                   <Star className="w-12 h-12 text-accent mx-auto mb-3" />
-                  <div className="text-2xl font-bold text-accent">4.9</div>
-                  <div className="text-sm text-muted-foreground">Average Rating</div>
+                  <div className="text-2xl font-bold text-accent">25%</div>
+                  <div className="text-sm text-muted-foreground">New Patient Discount</div>
                 </div>
                 <div className="text-center">
                   <Clock className="w-12 h-12 text-primary mx-auto mb-3" />
@@ -244,7 +244,7 @@ const Index = () => {
               Book Appointment
             </Button>
             <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              Call (123) 456-7890
+              Call 1234567890
             </Button>
           </div>
         </div>
