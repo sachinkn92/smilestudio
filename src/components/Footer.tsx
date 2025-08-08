@@ -1,18 +1,16 @@
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Footer = () => {
-  return (
-    <footer className="bg-foreground text-background">
+  return <footer className="bg-foreground text-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Practice Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">B</span>
+                <span className="text-primary-foreground font-bold text-lg">Ss</span>
               </div>
-              <span className="text-xl font-bold">BrightSmile Dental</span>
+              <span className="text-xl font-bold">Smile Studio Dental</span>
             </div>
             <p className="text-background/80 mb-6 max-w-md">
               Providing exceptional dental care with a gentle touch. Our experienced team is committed to helping you achieve and maintain optimal oral health.
@@ -69,8 +67,8 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5" />
                 <div>
-                  <p className="text-background/80">123 Dental Street</p>
-                  <p className="text-background/80">Health City, HC 12345</p>
+                  <p className="text-background/80">Smile studio</p>
+                  <p className="text-background/80">Hassan, 573201</p>
                 </div>
               </li>
               <li className="flex items-center space-x-3">
@@ -81,9 +79,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <a href="mailto:info@brightsmile.com" className="text-background/80 hover:text-primary transition-colors">
-                  info@brightsmile.com
-                </a>
+                <a href="mailto:info@brightsmile.com" className="text-background/80 hover:text-primary transition-colors">info@smilestudio.com</a>
               </li>
               <li className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-primary mt-0.5" />
@@ -98,13 +94,9 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
-          <p className="text-background/60 text-sm">
-            © 2024 BrightSmile Dental. All rights reserved. | Privacy Policy | Terms of Service
-          </p>
+          <p className="text-background/60 text-sm">© 2024 Smile Studio Dental. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
